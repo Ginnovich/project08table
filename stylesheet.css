@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Cyberpunk";
+  src: url(./fonts/Cyberpunk.otf);
+}
+
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(./fonts/Rubik-Regular.woff2);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-family: "Rubik-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #120458;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Cyberpunk", sans-serif;
+  color: #ff124f;
+}
+
+.box {
+  position: absolute;
+  opacity: 0;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.table:hover + .box {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+table {
+  font-family: "Rubik-Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}
+
+th {
+  font-size: 18px;
+  text-align: left;
+  padding: 20px 20px 20px 20px;
+}
+
+table,
+td {
+  padding: 8px 8px 8px 20px;
+}
+
+th {
+  background-color: #fe75fe;
+}
+
+tr:nth-child(even) {
+  background-color: #eff2f5;
+}
+
+tr:not(:first-child):hover {
+  background-color: rgba(114, 114, 113, 0.2);
+}
+
+.defaultBackgroundColor {
+  background-color: #ff124f; /*#red*/
+  box-shadow: 0px 0px 10px #e72061b3;
+}
+
+.defaultColor {
+  color: #120458;
+  font-style: italic;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  width: 171px;
+  height: 65px;
+  background: #7a04eb;
+  box-shadow: 0px 0px 16px #c80de0;
+  border-radius: 20px;
+  z-index: 3;
+  border-image: linear-gradient(#360154, #d442d5) 30;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  margin: auto;
+  font-family: "Rubik-Regular", sans-serif;
+  font-size: 35px;
+  line-height: 70px;
+  color: #ff124f;
+}
